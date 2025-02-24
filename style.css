@@ -1,0 +1,143 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Background Styling */
+body {
+    background: linear-gradient(to bottom, rgba(255, 77, 0, 0.95), rgba(255, 216, 74, 0.85)), 
+                url('zodiac.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+
+/* Header - Logo and Title */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds space between logo and text */
+    margin-top: 50px; /* Increase spacing from the top */
+}
+
+/* Logo */
+.logo {
+    width: 120px; /* Adjust size */
+    height: auto;
+    border-radius: 50%;
+    background: rgb(255, 249, 179);
+    padding: 5px;
+    box-shadow: 0px 4px 10px rgba(255, 249, 179);
+}
+
+/* LUCKORA Text */
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffefc7; /* Gold color */
+    letter-spacing: 10px; /* Adds space between letters */
+}
+
+
+.site-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #eedb70 !important; /* Ensures golden color applies */
+    letter-spacing: 5px;
+    margin: 0; /* Prevent unwanted spacing */
+}
+
+
+/* Search Container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 165, 0, 0.8);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 12px 20px;
+    backdrop-filter: blur(4px);
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 16px;
+    font-size: 18px;
+    color: white;
+}
+.search-bar input::placeholder {
+    color: #ffffff; /* White for better contrast */
+    opacity: 1; /* Ensures full visibility */
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: red;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 25px;
+}
+
+/* Subtext under Search Bar */
+.subtext {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Result Box */
+.result-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.result-box p {
+    margin: 8px 0;
+    color: #333;
+}
+
+.result-box strong {
+    color: #d35400;
+    font-weight: bold;
+}
