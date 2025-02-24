@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("📤 Sending birthYear:", birthYear);
 
         try {
-            const response = await fetch("http://localhost:3000/zodiac", {
+            const response = await fetch("https://luckora-backend.onrender.com/zodiac", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ birthYear }),
