@@ -21,11 +21,62 @@
             <input type="number" id="birth-year" placeholder="Enter Your Birth Year" required>
             <button type="submit"><img src="search.png" alt="Search"></button>
         </form>
-        <p class="subtext">Find Out the Animal Inside Your Body</p>
+        <p class="subtext">Find Out Who You Really Are</p>
 
         <!-- Result Box -->
         <div id="result" class="result-box"></div>
     </div>
+<!---------Stories-->
+<div class="story-toggle">
+    <button id="story-btn">Zodiac & Fortune</button>
+    <div id="story-content" class="hidden">
+      <p>
+        Your Chinese Zodiac isn’t just a symbol. it’s an energy blueprint.<br>
+        Feng Shui helps channel that energy into your surroundings.<br><br>
+  
+        A Dragon in a Fire year? You may need more water elements.<br>
+        A Rabbit facing clashing stars? Use red to shield your luck.<br><br>
+  
+        Just like wind needs direction, your fortune needs balance.<br>
+        Feng Shui doesn’t change who you are—<br>
+        it simply <strong>aligns you with your most powerful path</strong>.
+      </p>
+    </div>
+  </div>
+  
+  
+<!------------------Contact----------------------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luckora - Chinese Zodiac Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<div class="social-icons">
+    <a href="https://www.linkedin.com/company/luckora/about/?viewAsMember=true" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/luck.ora/" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+  
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("story-btn");
+      const content = document.getElementById("story-content");
+  
+      if (btn && content) {
+        btn.addEventListener("click", () => {
+          content.classList.toggle("hidden");
+        });
+      }
+    });
+  </script>
+  
 </body>
 </html>
