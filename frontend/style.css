@@ -192,3 +192,69 @@ body {
     font-size: 30px;
     margin: 0 10px;
 }
+/*------stories-----------*/
+/* Top-right nav container */
+.top-nav-right {
+    position: absolute;         /* Fix to corner */
+    top: 25px;                  /* Distance from top */
+    right: 30px;                /* Distance from right */
+    display: flex;              /* Add this to enable spacing */
+    gap: 40px;                  /* Space between Jackie and Bruce */
+    z-index: 999;               /* Ensure it's above everything */
+}
+
+/* Navigation link styling */
+.top-nav-right a {
+    font-size: 18px;            /* Text size */
+    font-weight: 600;           /* Semi-bold */
+    color: rgb(255, 232, 157);  /* Soft peachy white */
+    text-decoration: none;      /* No underline */
+    letter-spacing: 0.5px;      /* Slight spacing */
+    transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.top-nav-right a:hover {
+    opacity: 0.7;               /* Slight fade on hover */
+    cursor: pointer;
+}
+
+
+/* Jackie Chan Story Box - Styled like result-box but wider */
+.jackie-wide {
+    background: rgba(255, 255, 255, 0.95); /* white with soft transparency */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* slightly stronger shadow */
+    color: #333;
+}
+
+/* Headline style */
+.jackie-wide h3 {
+    color: #d35400;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+/* Emphasized text and keywords */
+.jackie-wide strong {
+    color: #d35400;
+    font-weight: bold;
+}
+
+.jackie-wide em {
+    font-style: italic;
+    color: #555;
+}
+.jackie-caption {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 16px;
+    color: #a14100;
+    opacity: 0.85;
+}
